@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>体检明细查看</title>
+    <link href="css/userinfo.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="alert-box">
+        <div class="alert-box-title">
+            体检明细查看
+        </div>
+        <div class="person-message-box">
+            <div class="message-box-out">
+            	<table class="message-box-table" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><i class="photo-box"><img id="photoImg" src="./img//myphoto.jpg" width="90" height="110"></i></td>
+                    <td>
+                    	<table><input type="hidden" class="text-t" value="" name="id" />
+                
+                  <tr>
+                    <td class="even" width="120">姓名：</td>
+                    <td class="odd" width="160">章健伟</td>
+                  </tr>
+                  <tr>
+                    <td align="right">健康证号：</td>
+                    <td class="odd" id="healthCardNo">511422121110701211991328043</td>
+                  </tr>
+                  <tr>
+                    <td align="right">体检结果：</td>
+                    <td id='physicalResult'>合格</td>
+                  </tr>
+                  <tr>
+                    <td align="right">证件号码：</td>
+					<td class="odd" id="cardNo">**************7011</td>
+                  </tr>
+                  <!-- <tr>
+                    <td align="right">联系电话：</td>
+					<td class="odd" id="tel"></td>
+                  </tr> -->
+                </table>
+                    </td>
+                  </tr>
+                </table>
+
+                
+            </div>
+        </div>
+        <div class="blue-box">
+            <div class="blue-table-out">
+                <table class="blue-table">
+                    <tr>
+                        <td width="100"><i class="blue-line"></i>检查单位：</td>
+                        <td id="compName">上海尚德医院</td>
+                    </tr>
+                    <tr id="tjlxText">
+                        <td><i class="blue-line"></i><span class="tjlxTextTitle">体检类型</span>：</td>
+                        <td id="physicalType">食品、饮用水、化妆品、公共场所</td>
+                    </tr>
+                    <tr>
+                        <td><i class="blue-line"></i>报告日期：</td>
+                        <td class="date-box" id="reportDate">2024-07-22</td>
+                    </tr>
+                    <tr>
+                        <td><i class="blue-line"></i>有效日期：</td>
+                        <!-- 比报告日期少一天 -->
+                        <td class="date-box" id="effectiveData">2025-07-21</td>
+                    </tr>
+                   <tr>
+                        <td><i class="blue-line"></i>上传日期：</td>
+                        <td class="date-box" id="createDate">2024-07-22</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="white-bhg" id="cause">
+                <span class="bhg-title">不合格原因:</span>
+                <div class="bhg-content" id="unfitCause"></div>
+    
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>
